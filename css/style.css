@@ -1,13 +1,92 @@
 header h1 {
-  /* position: absolute; */
   margin-left: 24px;
   top: 20px;
 
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: 700;
   font-size: 24px;
   font-style: normal;
   line-height: 25px;
   letter-spacing: -0.08em;
   text-transform: uppercase;
+  color: #333333;
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -4rem;
+  gap: 2rem;
+}
+
+.image {
+  margin: 2rem 2.4rem 0rem 2.4rem;
+}
+
+img,
+.message {
+  max-width: 100%;
+  max-height: 60vh;
+}
+
+h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  color: #333333;
+  max-width: 500px;
+}
+
+p {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  max-width: 300px;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  margin-top: 2.4rem;
+
+  text-transform: uppercase;
+  background-color: #333333;
+  color: white;
+
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    margin-top: unset;
+    gap: unset;
+  }
+
+  .image {
+    margin: 2rem 2.4rem 0rem 2.4rem;
+    height: 30%;
+  }
+
+  img {
+    max-height: 30vh;
+  }
+
+  .message {
+    margin: 0 1rem 0 1rem;
+    height: 50%;
+  }
+
+  h2 {
+    margin-bottom: 1.4rem;
+  }
 }
